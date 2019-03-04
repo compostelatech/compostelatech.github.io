@@ -11,31 +11,3 @@ services:
       sh -c 'bundle install &&
              bundle exec jekyll serve --host 0.0.0.0 -w --force_polling --config "_config.yml,_config_dev.yml"'
 
-# docker run --rm -it -p 4000:4000 -v %cd%:/app -w /app dagope/githubpagebase:v1.0 /bin/bash -c "'bundle install && bundle exec jekyll serve -w --config '_config.yml,_config_dev.yml'""
-
-# version: '3'
-# services:
-#   jekyll-build:
-#     image: jekyll/builder:3.8
-#     ports:
-#         - "4000:4000"
-#     volumes:
-#       - .:/app
-#     working_dir: /app
-#     command: /bin/bash -c "bundle exec jekyll serve -w --config "_config.yml,_config_dev.yml""
-
-#    gem install jekyll bundler
-
-
-# version: '3'
-# services:
-#   jekyll-build:
-#     image: compostelatech_githubpages
-#     ports:
-#         - "4000:4000"
-#     volumes:
-#       - .:/app
-#     working_dir: /app
-#     #command: /bin/bash -c "bundle exec jekyll serve -w --config "_config.yml,_config_dev.yml""
-#     command: bundle exec jekyll serve --config "_config.yml,_config_dev.yml"
-

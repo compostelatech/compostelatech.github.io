@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'/>
+  <link href='vendor/gcalendar/css/fullcalendar.min.css' rel='stylesheet'/>
+  <link href='vendor/gcalendar/css/fullcalendar.vigotech.css' rel='stylesheet'/>
+  <link href='vendor/gcalendar/css/fullcalendar.print.min.css' rel='stylesheet' media='print'/>
+  <script src='vendor/gcalendar/js/lib/moment.min.js'></script>
+  <script src='vendor/gcalendar/js/lib/jquery.min.js'></script>
+  <script src='vendor/gcalendar/js/fullcalendar.min.js'></script>
+  <script src='vendor/gcalendar/js/gcal.min.js'></script>
+  <script src='vendor/gcalendar/js/locale-all.js'></script>
+
+  <script>
+
+    $(document).ready(function () {
+
+      $('#calendar').fullCalendar({
+
+        header: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'month,agendaWeek,listMonth'
+        },
+
+        displayEventTime: false, // don't show the time column in list view
+
+        googleCalendarApiKey: 'AIzaSyBAAMQmvW34xzjKtEuwYqVJ9Y6Wu6tFJOk',
+
+        //events: 'compostelatech.org_nfp71mi362ku9p3t8su7b199nc@group.calendar.google.com',
+        events: 'orestes.io_fj8ev1vakdnl8l8o6jeljhof1s@group.calendar.google.com', //VigoTech
+
+        locale: 'gl',
+
+        eventClick: function (event) {
+          // opens events in a popup window
+          window.open(event.url, 'gcalevent', 'width=700,height=600');
+          return false;
+        },
+
+        loading: function (bool) {
+          $('#loading').toggle(bool);
+          if (!bool) {
+            resizeCalendar();
+          }
+        },
+        windowResize: function(view) {
+          resizeCalendar();
+        },
+      });
+
+
+
+    });
+
+    function resizeCalendar() {
+      if ($(window).width() < 600) {
+        $('#calendar').fullCalendar('changeView', 'listMonth');
+      }
+    }
+
+  </script>
+  <style>
+
+    body {
+      background-color: #ffffff;
+      margin: 40px 10px;
+      padding: 0;
+      font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
+      font-size: 14px;
+    }
+
+    #loading {
+      display: none;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    #calendar {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+  </style>
+</head>
+<body>
+
+<div id='loading'>loading...</div>
+
+<div id='calendar'></div>
+
+</body>
+</html>

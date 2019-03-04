@@ -1,0 +1,56 @@
+    <section class="features-icons bg-light text-center">
+      <div class="container">
+        <h2 class="mb-5">Pr&oacute;ximos eventos</h2>
+
+
+    {% for evento in site.data.eventos %}
+
+
+
+		<div class="row">
+			<div class="col-xs-offset-2 col-xs-10 col-sm-offset-2 col-sm-10 col-md-offset-2 col-md-10 col-lg-offset-2 col-lg-10">
+				<ul class="event-list">
+					<li>
+						<time datetime="">
+              <span class="day">{{ evento.fecha | date: "%d" }}</span>
+              <span class="month">
+{% assign m = evento.fecha | date: "%-m" %}
+{% case m %}
+  {% when '1' %}Xaneiro
+  {% when '2' %}Febreiro
+  {% when '3' %}Marzo
+  {% when '4' %}Abril
+  {% when '5' %}Maio
+  {% when '6' %}Xuño
+  {% when '7' %}Xullo
+  {% when '8' %}Agosto
+  {% when '9' %}Setembro
+  {% when '10' %}Outubro
+  {% when '11' %}Novembro
+  {% when '12' %}Decembro
+{% endcase %}
+                </span>
+              <span class="year">{{ evento.fecha | date: "%y" }}</span>
+              <span class="time">{{ evento.hora }}</span>
+						</time>
+						<div class="info">
+              <p class="title">{{ evento.titulo}}</p>
+              <h2 class="desc">{{ evento.grupo}}</h2>
+              <p class="lugar">A las {{ evento.hora }} en {{ evento.lugar}}</p>
+						</div>
+						<div class="social">
+							<ul>
+								<li class="facebook" style="width:33%;"><a href="#facebook"><span class="fa fa-facebook"></span></a></li>
+								<li class="twitter" style="width:34%;"><a href="#twitter"><span class="fa fa-twitter"></span></a></li>
+								<li class="google-plus" style="width:33%;"><a href="#google-plus"><span class="fa fa-google-plus"></span></a></li>
+							</ul>
+						</div>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+    {% endfor %}
+      </div>
+    </section>
+

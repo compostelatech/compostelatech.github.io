@@ -1,0 +1,49 @@
+- name: Aberteo
+  image: g_logo_aberteo.jpg
+  home: http://www.aberteo.gal
+  meetup: 
+  twitter: ABERTEO
+  github: 
+  facebook:  
+  youtube: 
+  instagram: 
+
+- name: Blockchain Gal
+  image: g_logo_blockchaingal.jpg
+  home: http://www.blockchainhome.com
+  meetup: blockchain_gal
+  twitter: twitterblockchain
+  github: 
+  facebook:  
+  youtube: 
+  instagram: 
+
+- name: CDG Santiago
+  image: g_logo_gdgsantiago.jpg
+  home: 
+  meetup: gdgsantiagoes
+  twitter: GDGSantiagoES
+  github: 
+  facebook: 
+  youtube: 
+  instagram: gdgsantiagoes
+
+- name: Recuncho Maker
+  image: g_logo_recunchomaker.png
+  home: http://www.recunchomaker.com
+  meetup: 
+  twitter: RecunchoMaker
+  github: 
+  facebook:  
+  youtube: 
+  instagram: 
+
+- name: XantarDev
+  image: g_logo_xantardev.jpg
+  home: http://www.xantardev.org
+  meetup: XantarDev
+  twitter: XantarDev
+  github: xantardev
+  facebook:  
+  youtube: 
+  instagram:     

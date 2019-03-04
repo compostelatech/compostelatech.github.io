@@ -1,0 +1,74 @@
+    <section class="testimonials text-center bg-light">
+      <div class="container">
+        <h2 class="mb-5">Grupos</h2>
+        <div class="row">
+{% for grupo in site.data.grupos %}
+          <div class="col-lg-4 compostelatech-group">
+            <div class="testimonial-item mx-auto text-center mb-5 mb-lg-0">
+              <img class="img-fluid rounded-circle mb-3" src="img/{{ grupo.image }}" alt="{{ grupo.name }}">
+              <!--p class="font-weight-light mb-0">{{ grupo.name }}</p-->
+              <h5>{{ grupo.name }}</h5>
+              <div class="col-lg-12 h-100 text-center my-auto">
+                <ul class="list-inline">
+                  {% if grupo.home %}
+                  <li class="list-inline-item">
+                    <a title="{{ grupo.name }} en Web" href="{{ grupo.home }}">
+                      <i class="fa fa-home mr-8"></i>
+                    </a>
+                  </li>
+                  {% endif %}
+                  {% if grupo.meetup %}
+                  <li class="list-inline-item">
+                    <a title="{{ grupo.name }} en Meetup" href="https://www.meetup.com/{{ grupo.meetup }}">
+                      <i class="fab fa-meetup mr-8"></i>
+                    </a>
+                  </li>
+                  {% endif %}
+                  {% if grupo.facebook %}
+                  <li class="list-inline-item">
+                    <a title="{{ grupo.name }} en Facebook" href="https://facebook.com/{{ grupo.facebook}}">
+                      <i class="fab fa-facebook mr-8"></i>
+                    </a>
+                  </li>
+                  {% endif %}
+                  {% if grupo.twitter %}
+                  <li class="list-inline-item">
+                    <a title="{{ grupo.name }} en Twitter" href="https://twitter.com/{{ grupo.twitter}}">
+                      <i class="fab fa-twitter mr-8"></i>
+                    </a>
+                  </li>
+                  {% endif %}
+                  {% if grupo.instagram %}
+                  <li class="list-inline-item">
+                    <a title="{{ grupo.name }} en Instagram" href="https://instagram.com/{{ grupo.instagram}}">
+                      <i class="fab fa-instagram mr-8"></i>
+                    </a>
+                  </li>
+                  {% endif %}
+                  {% if grupo.github %}
+                  <li class="list-inline-item">
+                    <a title="{{ grupo.name }} en github" href="https://github.com/{{ grupo.github }}">
+                      <i class="fab fa-github mr-8"></i>
+                    </a>
+                  </li>
+                  {% endif %}
+                  {% if grupo.youtube %}
+                  <li class="list-inline-item">
+                    <a title="{{ grupo.name }} en Youtube" href="https://youtube.com/{{ grupo.youtube}}">
+                      <i class="fab fa-youtube mr-8"></i>
+                    </a>
+                  </li>
+                  {% endif %}
+                </ul>
+              </div>
+            </div>
+          </div>
+{% endfor %}
+        </div>
+      </div>
+    </section>
+
+
+
+
+

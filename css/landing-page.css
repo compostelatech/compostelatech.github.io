@@ -72,9 +72,18 @@ header.masthead h1 {
     max-width: 100%;
 }
 
+
 .next-event-content .next-event-logo .member-logo {
     width: 100px;
 }
+/*
+@media (max-width: 768px) {
+    .next-event-content .next-event-logo .member-logo {
+        width: 50px; 
+    }
+}
+*/
+
 .next-event-content .next-event-info {
     width: 100%;
     text-align: left;
@@ -122,11 +131,19 @@ header.masthead h1 {
     width: 70px;
 }
 @media (min-width: 768px) {
-
+    
 }
 /* End Slack Section */
+@media (max-width: 768px) {
+    .next-event-content .next-event-logo .member-logo {
+        width: 70px;
+    }
+}
 
 @media (min-width: 768px) {
+  .masthead .logo-home{
+    width: 400px;
+  }
   header.masthead {
     padding-top: 12rem;
     padding-bottom: 12rem;

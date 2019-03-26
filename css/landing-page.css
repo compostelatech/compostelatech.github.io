@@ -50,6 +50,7 @@ header.masthead h1 {
     background: #fff;
     padding: 15px;
     margin: 30px auto;
+    display: flow-root;
 }
 
 .next-event-title {
@@ -109,6 +110,7 @@ header.masthead h1 {
     background-color: #0A74BA;
     color:#fff;
 }
+
 /*End next event */
 
 /* Begin Groups */

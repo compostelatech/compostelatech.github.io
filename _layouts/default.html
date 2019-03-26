@@ -43,28 +43,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-              <!-- <img class="logo-home" style="display:none" src="img/logo03_full_land_logo-wb-letter-bw-back-b.png" />
-              <img class="logo-home" style="display:none" src="img/logo03_full_land_logo-bw-letter-wb_back-w.png" />
-              <img class="logo-home" style="display:none" src="img/logo03_full_land_logo-blue-letter-blue_back-b.jpg" />
-              <img class="logo-home" style="display:none" src="img/logo03_full_land_logo-w-letter-w_back-b.jpg" />
-              <img class="logo-home" style="display:none" src="img/logo03_full_land_logo-gray-letter-gray_back-b.jpg" /> -->
-              
               <img class="logo-home" style="" src="img/logo03_full_land_logo-blue-letter-w-blue_back-trans.png" />
-              
-<!--
-              <img class="logo-home" style="display:none" src="img/logo03_full_land_logo-blue-back-w-letter-w-blue_back-trans.png" />
-
-              <img class="logo-home" style="display:none" src="img/logo03_full_land_logo-blue-letter-b-blue_back-trans.png.png" />
-              <img class="logo-home" style="display:none" src="img/logo03_full_land_logo-white-letter-white_back-trans.png" />
-              <img class="logo-home" style="display:none" src="img/logo03_full_land_logo-black-letter-black_back-trans.png" />
-              <img class="logo-home" style="display:none" src="img/logo03_full_land_logo-black-white-letter-black_back-trans.png" />
-              <img class="logo-home" style="display:none" src="img/logo03_full_land_logo-black-trans-letter-lack_back-trans.png" />
-              <img class="logo-home" style="display:none" src="img/logo03_full_land_logo-blue-trans-letter-blue_back-trans.png" />
-              <img class="logo-home" style="display:none" src="img/logo03_full_land_logo-blue-w-letter-blue_back-trans.png" />
-              <img class="logo-home" style="display:none" src="img/logo03_full_land_logo-gray-w-letter-gray_back-trans.png" />
-              <img class="logo-home" style="display:none" src="img/logo03_full_land_logo-gray-letter-gray_back-trans.png" />
-    -->          
-              
           </div>
         </div>
         <div class="row" style="visibility: hidden">
@@ -74,27 +53,67 @@
         </div>
         <div class="row">
           <div class="col-md-9 mx-auto">
+            
+              <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    {% assign index = 0 %}
+                    {% for evento in site.data.eventos %}
+                      {% if index == 0 %}
+                        {% assign classActive = 'active' %}
+                      {% else %}
+                        {% assign classActive = '' %}
+                      {% endif %}
+                      <li data-target="#carouselExampleIndicators" data-slide-to="{{ index }}" class="{{ classActive }}"></li>
 
-            <div class="container-next-event">
-              <div class="next-event-title"><h4><i class="fa fa-calendar-alt"></i> <span>Vindeiro evento</span></h4> </div>
-              <div class="next-event-content">
-                <div class="next-event-logo">
-                  <a href="https://www.google.es">
-                    <img src="img/g_logo_xantardev.jpg" alt="Nombre Comunidad" class="member-logo">
+                      {% assign index = i | plus:1 %}
+                    {% endfor %}
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="container-next-event">
+                      <div class="next-event-title"><h4><i class="fa fa-calendar-alt"></i> <span>Vindeiro evento</span></h4> </div>                          
+                      {% assign index = 0 %}
+                      {% for evento in site.data.eventos %}
+                        {% if index == 0 %}
+                          {% assign classActive = 'active' %}
+                        {% else %}
+                          {% assign classActive = '' %}
+                        {% endif %}
+                        <div class="carousel-item {{ classActive }}">
+                          <div class="next-event-content ">
+                              <div class="next-event-logo">
+                                <a href="{{ evento.mas_info }}">
+                                  <img src="img/{{ evento.logo }}" alt="{{ evento.grupo }}" class="member-logo">
+                                </a>
+                              </div>
+                              <div class="next-event-info">
+                                <a href="{{ evento.mas_info }}" target="blank">
+                                  <h6>{{ evento.grupo }}</h6> 
+                                  <h5>{{ evento.titulo }}</h5> 
+                                  <span class="datetime">
+                                    <i class="fa fa-calendar-alt"></i> {{ evento.fecha | date: "%d/%m/%Y" }} <i class="fa fa-clock"></i> {{ evento.hora }}</span> 
+                                    <br/><i class="fa fa-map-marker-alt"></i> {{ evento.lugar }}</span> 
+                                  <span class="btn">Máis info</span>
+                                </a>
+                              </div>
+                            </div>
+                        </div>
+
+                        {% assign index = i | plus:1 %}
+                      {% endfor %}
+                      
+                      
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
                   </a>
                 </div>
-                <div class="next-event-info">
-                  <a href="https://www.google.es/">
-                    <h6>XantarDev</h6> 
-                    <h5>XantarDev vuelve el 23F: CSS - Legacy code - Deep Learning</h5> 
-                    <span class="datetime"><i class="fa fa-calendar-alt"></i> 23/02/2019 <br/><i class="fa fa-clock"></i> 10:00</span> 
-                    <span class="btn">Máis info</span>
-                  </a>
-                </div>
-              </div>
-            </div>
-
-        
+            
           </div>
         </div>
       </div>
@@ -239,6 +258,7 @@
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    
   </body>
 
 </html>

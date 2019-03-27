@@ -2,15 +2,15 @@
 footer-links:
   dribbble:
   email: info@compostelatech.com
-  facebook: compostelatech_facebook
+  facebook: compostelatech
   flickr:
-  github: compostelatech_github
-  instagram: compostelatech_instagram
+  github: compostelatech
+  instagram: compostelatech
   pinterest:
   rss: # just type anything here for a working RSS icon
-  twitter: compostelatech_twitter
+  twitter: compostelatech
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
-  youtube: compostelatech_youtube
+  youtube: compostelatech
 
 
 # Jekyll 3 now only supports Kramdown for Markdown

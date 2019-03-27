@@ -22,16 +22,24 @@
     <link href="css/landing-page.css" rel="stylesheet">
 
      <!-- Icons -->
-    <link rel="shortcut icon"                                href="img/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon-precomposed"                 href="img/apple-touch-icon.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="57x57"   href="img/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72"   href="img/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76"   href="img/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="img/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="img/apple-touch-icon-152x152.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="180x180" href="img/apple-touch-icon-180x180.png" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
   </head>
 
@@ -68,7 +76,7 @@
                       {% assign index = i | plus:1 %}
                     {% endfor %}
                   </ol>
-                  <div class="carousel-inner">
+                  <div class="carousel-inner" style="max-width: 600px; margin: auto;">
                     <div class="container-next-event">
                       <div class="next-event-title"><h4><i class="fa fa-calendar-alt"></i> <span>Vindeiro evento</span></h4> </div>                          
                       {% assign index = 0 %}
@@ -119,37 +127,7 @@
       </div>
     </header>
 
-    <!-- Grupos -->
-    <!-- Chuleta social icons
-<i class="fa fa-bitbucket"></i>      
-<i class="fa fa-digg"></i>           
-<i class="fa fa-dropbox"></i>        
-<i class="fa fa-facebook"></i>       
-<i class="fa fa-flickr"></i>         
-<i class="fa fa-foursquare"></i>     
-<i class="fa fa-github"></i>         
-<i class="fa fa-google"></i>         
-<i class="fa fa-google-plus"></i>    
-<i class="fa fa-instagram"></i>      
-<i class="fa fa-jsfiddle"></i>       
-<i class="fa fa-linkedin"></i>       
-<i class="fa fa-pinterest"></i>      
-<i class="fa fa-reddit"></i>         
-<i class="fa fa-skype"></i>          
-<i class="fa fa-soundcloud"></i>     
-<i class="fa fa-spotify"></i>        
-<i class="fa fa-stack-exchange"></i> 
-<i class="fa fa-stack-overflow"></i> 
-<i class="fa fa-steam"></i>          
-<i class="fa fa-stumbleupon"></i>    
-<i class="fa fa-tumblr"></i>         
-<i class="fa fa-twitter"></i>        
-<i class="fa fa-vimeo-square"></i>   
-<i class="fa fa-vine"></i>           
-<i class="fa fa-windows"></i>        
-<i class="fa fa-wordpress"></i>      
-<i class="fa fa-yahoo"></i>          
-<i class="fa fa-youtube"></i-->        
+    <!-- Grupos -->    
     {% include grupos.html %}
 
     <!-- Eventos -->

@@ -20,8 +20,9 @@ h6 {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../img/bg-masthead_00_compress.jpg") no-repeat center center;
+  background: url("../img/greg-rakozy-53292-unsplash-2048x1060.jpg") no-repeat center center;
   background-size: cover;
+  background-repeat: no-repeat;
   padding-top: 8rem;
   padding-bottom: 8rem;
 }
@@ -147,8 +148,8 @@ header.masthead h1 {
     width: 400px;
   }
   header.masthead {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+    padding-top: 13rem;
+    padding-bottom: 13rem;
   }
   header.masthead h1 {
     font-size: 3rem;
@@ -209,10 +210,10 @@ header.masthead h1 {
 .call-to-action {
   position: relative;
   background-color: #343a40;
-  background: url("../img/bg-masthead_00_compress.jpg") no-repeat center center;
+  background: url("../img/greg-rakozy-53292-unsplash-2048x1060.jpg") no-repeat center center;
   background-size: cover;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
 }
 
 .call-to-action .overlay {

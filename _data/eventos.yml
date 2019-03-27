@@ -3,34 +3,46 @@
   fecha: 2019-03-28
   hora: "17:50"
   titulo: MarzalDev OAuth2 para SPA y GUI Testing
-  lugar: Centro Sociocultural O Castiñeiriño
-  url_lugar: https://goo.gl/maps/oUeAJd86Sxt
-  mas_info: http://google.com
+  lugar: Centro Sociocultural Castiñeiriño
+  url_lugar: https://goo.gl/maps/C2yeffpahjt
+  mas_info: https://www.meetup.com/es-ES/XantarDev/events/259322750/
 
-- grupo: Blockchain Gal
-  logo: g_logo_blockchaingal.jpg
-  fecha: 2019-05-08
-  hora: "16:00"
-  titulo: Creando nuestra propia moneda
-  lugar: C/ Melancolia 7
-  url_lugar: https://goo.gl/maps/oUeAJd86Sxt
-  mas_info: http://google.com
 
-- grupo: CDG Santiago
-  logo: g_logo_gdgsantiago.jpg  
-  fecha: 2019-03-12
-  hora: "19:30"
-  titulo: El ultimo framework de javascript
-  lugar: C/ Felipe IV
-  url_lugar: https://goo.gl/maps/oUeAJd86Sxt
-  mas_info: http://google.com
+# EJEMPLOS de eventos por cada grupo:
 
-- grupo: Recuncho Maker
-  logo: g_logo_recunchomaker.png  
-  fecha: 2019-06-15
-  hora: "15:30"
-  titulo: Hackeando domótica y mas cosas
-  lugar: Plaza Roja
-  url_lugar: https://goo.gl/maps/oUeAJd86Sxt
-  mas_info: http://google.com
+# - grupo: XantarDev
+#   logo: g_logo_xantardev.jpg
+#   fecha: 2019-03-28
+#   hora: "17:50"
+#   titulo: MarzalDev OAuth2 para SPA y GUI Testing
+#   lugar: Centro Sociocultural O Castiñeiriño
+#   url_lugar: https://goo.gl/maps/C2yeffpahjt
+#   mas_info: https://www.meetup.com/es-ES/XantarDev
+
+# - grupo: Blockchain Gal
+#   logo: g_logo_blockchaingal.jpg
+#   fecha: 2019-05-08
+#   hora: "16:00"
+#   titulo: Creando nuestra propia moneda
+#   lugar: C/ Melancolia 7
+#   url_lugar: https://goo.gl/maps/oUeAJd86Sxt
+#   mas_info: http://google.com
+
+# - grupo: CDG Santiago
+#   logo: g_logo_gdgsantiago.jpg  
+#   fecha: 2019-03-12
+#   hora: "19:30"
+#   titulo: El ultimo framework de javascript
+#   lugar: C/ Felipe IV
+#   url_lugar: https://goo.gl/maps/oUeAJd86Sxt
+#   mas_info: http://google.com
+
+# - grupo: Recuncho Maker
+#   logo: g_logo_recunchomaker.png  
+#   fecha: 2019-06-15
+#   hora: "15:30"
+#   titulo: Hackeando domótica y mas cosas
+#   lugar: Plaza Roja
+#   url_lugar: https://goo.gl/maps/oUeAJd86Sxt
+#   mas_info: http://google.com
 

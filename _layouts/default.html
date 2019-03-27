@@ -79,6 +79,11 @@
                   <div class="carousel-inner" style="max-width: 600px; margin: auto;">
                     <div class="container-next-event">
                       <div class="next-event-title"><h4><i class="fa fa-calendar-alt"></i> <span>Vindeiro evento</span></h4> </div>                          
+                      {% if site.data.eventos == false or site.data.eventos.size == 0 %}
+                      <div class="text-center" style="color:black;">
+                        <h6>Sen nada programado</h6> 
+                      </div>
+                      {% endif %}
                       {% assign index = 0 %}
                       {% for evento in site.data.eventos %}
                         {% if index == 0 %}

@@ -1,0 +1,13 @@
+- name: Manifesto
+  url: http://talcual.com
+  icon: icon-check 
+
+- name: Código de conducta
+  url: http://talcual.com
+  icon: icon-layers 
+
+- name: Condicións de entrada
+  url: http://talcual.com
+  icon: icon-screen-desktop
+
+

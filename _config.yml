@@ -1,1 +1,68 @@
-theme: jekyll-theme-slate
+# Includes an icon in the footer for each username you enter
+footer-links:
+  dribbble:
+  email: info@compostelatech.com
+  facebook: compostelatech
+  flickr:
+  github: compostelatech
+  instagram: compostelatech
+  pinterest:
+  rss: # just type anything here for a working RSS icon
+  twitter: compostelatech
+  stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
+  youtube: compostelatech
+
+
+# Jekyll 3 now only supports Kramdown for Markdown
+kramdown:
+  # Use GitHub flavored markdown, including triple backtick fenced code blocks
+  input: GFM
+  # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    # Use existing pygments syntax highlighting css
+    css_class: 'highlight'
+
+# Set the Sass partials directory, as we're using @imports
+sass:
+  style: :expanded # You might prefer to minify using :compressed
+
+
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink: /:title/
+
+# Custom vars
+version:          3.0.5
+
+github:           metadata
+
+repository:       compostelatech/compostelatech.github.io
+
+# Setup
+author:
+  name:           "CompostelaTech"
+  url:            https://twitter.com/compostelatech
+  twitter:        compostelatech
+  profile_github: https://github.com/compostelatech
+
+paginate:         5
+
+name:             "CompostelaTECH"
+title:            "CompostelaTECH"
+tagline:          "Grupos de tecnoloxía en Santiago de Compostela"
+description:      "Xuntos e con sentidiño"
+locale:           es_es
+encoding:         utf-8
+url:              https://compostelatech.github.io/
+baseurl:          https://compostelatech.github.io/
+google_analytics: XXXXXX
+icon:             /public/img/defaulticon.jpg
+
+plugins: 
+  - jekyll-sitemap
+  - jemoji
+  - jekyll-feed

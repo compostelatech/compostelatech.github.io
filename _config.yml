@@ -53,14 +53,14 @@ paginate:         5
 
 name:             "CompostelaTECH"
 title:            "CompostelaTECH"
-tagline:          "Grupos de tecnoloxía en Santiago de Compostela"
-description:      "Xuntos e con sentidiño"
+tagline:          "Xuntos e con sentidiño"
+description:      "Agrupación de comunidades tecnolóxicas de Santiago de Compostela"
 locale:           es_es
 encoding:         utf-8
-url:              https://compostelatech.github.io/
-baseurl:          https://compostelatech.github.io/
+url:              https://compostelatech.org/
+baseurl:          https://compostelatech.org/
 google_analytics: XXXXXX
-icon:             /public/img/defaulticon.jpg
+icon:             /public/img/logo03_logo-blue_back-trans.png
 
 plugins: 
   - jekyll-sitemap

@@ -124,8 +124,9 @@
                                   <h6>{{ evento.grupo }}</h6> 
                                   <h5>{{ evento.titulo }}</h5> 
                                   <span class="datetime">
-                                    <i class="fa fa-calendar-alt"></i> {{ evento.fecha | date: "%d/%m/%Y" }} <i class="fa fa-clock"></i> {{ evento.hora }}</span> 
-                                    <br/><i class="fa fa-map-marker-alt"></i> {{ evento.lugar }}</span> 
+                                    <i class="fa fa-calendar-alt"></i> {{ evento.fecha | date: "%d/%m/%Y" }}
+                                    {% if evento.hora %}<i class="fa fa-clock"></i> {{ evento.hora }} {% endif %}</span> 
+                                    <br/>{% if evento.lugar %} <i class="fa fa-map-marker-alt"></i> {{ evento.lugar }} {% endif %}</span> 
                                   <span class="btn">Máis info</span>
                                 </a>
                               </div>

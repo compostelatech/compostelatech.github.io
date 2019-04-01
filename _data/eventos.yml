@@ -1,5 +1,14 @@
 - grupo: XantarDev
   logo: g_logo_xantardev.jpg
+  fecha: 2019-04-09
+  hora: "20:00"
+  titulo: "XD/DX : Llena Azure de contenedores"
+  lugar: "Coworking Doutroxeito, Rúa do horreo 22."
+  url_lugar: 
+  mas_info: https://www.meetup.com/es-ES/XantarDev/events/260242992
+
+- grupo: XantarDev
+  logo: g_logo_xantardev.jpg
   fecha: 2019-06-08
   hora: 
   titulo: XantarDev - Aniversario III

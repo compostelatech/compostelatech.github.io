@@ -108,13 +108,7 @@ ol.carousel-indicators li {
 .next-event-content .next-event-logo .member-logo {
     width: 100px;
 }
-/*
-@media (max-width: 768px) {
-    .next-event-content .next-event-logo .member-logo {
-        width: 50px; 
-    }
-}
-*/
+
 
 .next-event-content .next-event-info {
     width: 100%;
@@ -170,28 +164,8 @@ ol.carousel-indicators li {
 .joinus .logo-slack{
     width: 90px;
 }
-@media (min-width: 768px) {
-    
-}
 /* End Slack Section */
-@media (max-width: 768px) {
-    .next-event-content .next-event-logo .member-logo {
-        width: 70px;
-    }
-}
 
-@media (min-width: 768px) {
-  .masthead .logo-home{
-    width: 400px;
-  }
-  header.masthead {
-    padding-top: 13rem;
-    padding-bottom: 13rem;
-  }
-  header.masthead h1 {
-    font-size: 3rem;
-  }
-}
 
 .showcase .showcase-text {
   padding: 3rem;
@@ -202,11 +176,6 @@ ol.carousel-indicators li {
   background-size: cover;
 }
 
-@media (min-width: 768px) {
-  .showcase .showcase-text {
-    padding: 7rem;
-  }
-}
 
 .features-icons {
   padding-top: 7rem;
@@ -415,8 +384,20 @@ footer.footer {
 }
 
 @media (min-width: 768px) {
-
-
+    .masthead .logo-home{
+      width: 400px;
+      margin-bottom: 4rem;
+    }
+    header.masthead {
+      padding-top: 13rem;
+      padding-bottom: 13rem;
+    }
+    header.masthead h1 {
+      font-size: 3rem;
+    }
+    .showcase .showcase-text {
+      padding: 7rem;
+    }
     .event-list > li {
         position: relative;
         display: block;
@@ -486,6 +467,10 @@ footer.footer {
 @media (max-width: 768px) {
   .masthead .logo-home {
     width: 75%;
+    margin-bottom: 2rem;
+  }
+  .next-event-content .next-event-logo .member-logo {
+      width: 70px;
   }
   .calendar .embed-responsive {
     min-height: 50vh;

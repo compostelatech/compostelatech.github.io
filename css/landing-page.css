@@ -152,6 +152,13 @@ ol.carousel-indicators li {
 /* End Groups */
 
 /* Begin Slack Section */
+.slack-section .slack-links{
+  display: flex;
+  flex-direction: column;
+}
+.slack-section .slack-links .slack-claim {
+  margin-bottom: 15px;
+}
 .joinus a { 
     text-decoration: none; 
     color: #000;
@@ -161,7 +168,7 @@ ol.carousel-indicators li {
     font-weight: 100;
 }
 .joinus .logo-slack{
-    width: 70px;
+    width: 90px;
 }
 @media (min-width: 768px) {
     
@@ -486,5 +493,8 @@ footer.footer {
   }
   img.logo-footer {
     margin-bottom: 20px;
+  }
+  .slack-section .slack-links {
+    align-items: center;
   }
 }

@@ -158,10 +158,13 @@
     {% include grupos.html %}
 
     <!-- Eventos -->
+    
     {% include calendar_events.html %}
-
+    
     <!-- Documentos -->
+    {% comment %}
     {% include documentos.html %}
+    {% endcomment %}
     
 
     <!-- Call to Action -->
@@ -174,10 +177,12 @@
         <div class="row">
           <div class="col-lg-4 h-100 text-center text-lg-left my-auto">
             <ul class="list-inline mb-2">
+              {% comment %}
               <li class="list-inline-item">
                 <a href="#">Acerca de</a>
               </li>
-              <li class="list-inline-item">&sdot;</li>
+              {% endcomment %}
+              <!--<li class="list-inline-item">&sdot;</li>-->
               <li class="list-inline-item">
                 <a href="mailto:info@compostelatech.org">Contacto</a>
               </li>

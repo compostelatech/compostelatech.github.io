@@ -6,7 +6,14 @@
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-
+a {
+  color: #0D80CD;
+}
+a:hover,
+a:focus {
+  color: #4CB5FC;
+  text-decoration: none;
+}
 h1,
 h2,
 h3,
@@ -45,7 +52,30 @@ header.masthead h1 {
     width: 200px;
 }
 
+.btn.btn-blue {
+  background-color: #0D80CD;
+  border-radius: .25rem;
+  color: #fff;
+}
+.btn.btn-blue:hover,
+.btn.btn-blue:focus {
+  background-color: #4CB5FC;
+}
+
 /* Styles Next Event */
+ol.carousel-indicators {
+    bottom: -20px;
+}
+ol.carousel-indicators li {
+  height: 6px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 25px;
+    height: 25px;
+}
 .container-next-event {
     max-width: 600px;
     background: #fff;
@@ -108,7 +138,7 @@ header.masthead h1 {
 }
 .next-event-content .next-event-info .btn {
     float: right;
-    background-color: #0A74BA;
+    background-color: #0D80CD;
     color:#fff;
 }
 
@@ -192,13 +222,15 @@ header.masthead h1 {
   font-size: 5rem;
 }
 
-.testimonials {
+.testimonials,
+.calendar {
   padding-top: 7rem;
   padding-bottom: 1rem;
 }
 
 .testimonials .testimonial-item {
   max-width: 18rem;
+  margin-bottom: 20px !important;
 }
 
 .testimonials .testimonial-item img {
@@ -216,6 +248,9 @@ header.masthead h1 {
   padding-bottom: 8rem;
 }
 
+.calendar .embed-responsive {
+  margin-bottom: 20px;
+}
 .call-to-action .overlay {
   position: absolute;
   background-color: #212529;
@@ -439,3 +474,17 @@ footer.footer {
     }
 }
 
+
+/* smartphone */
+@media (max-width: 768px) {
+  .masthead .logo-home {
+    width: 75%;
+  }
+  .calendar .embed-responsive {
+    min-height: 50vh;
+    overflow-y: auto !important;
+  }
+  img.logo-footer {
+    margin-bottom: 20px;
+  }
+}

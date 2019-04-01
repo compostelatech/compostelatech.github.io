@@ -1,3 +1,12 @@
+- grupo: WPCompostela
+  logo: g_logo_wpcompostela.jpg
+  fecha: 2019-04-04
+  hora: "18:45"
+  titulo: "A Importancia das Imaxes no Entorno Web"
+  lugar: "O Boneco Bar. Av. Raxoi 19"
+  url_lugar: https://www.google.com/maps/search/?api=1&query=Avenida+de+Raxoi%2C+19%2C+Santiago+de+Compostela%2C+al%2C+es
+  mas_info: https://www.meetup.com/es-ES/WordPress-Compostela/events/260241274/
+
 - grupo: XantarDev
   logo: g_logo_xantardev.jpg
   fecha: 2019-04-09

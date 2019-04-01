@@ -5,6 +5,7 @@
   <link href='vendor/gcalendar/css/fullcalendar.min.css' rel='stylesheet'/>
   <link href='vendor/gcalendar/css/fullcalendar.vigotech.css' rel='stylesheet'/>
   <link href='vendor/gcalendar/css/fullcalendar.print.min.css' rel='stylesheet' media='print'/>
+
   <script src='vendor/gcalendar/js/lib/moment.min.js'></script>
   <script src='vendor/gcalendar/js/lib/jquery.min.js'></script>
   <script src='vendor/gcalendar/js/fullcalendar.min.js'></script>
@@ -81,7 +82,15 @@
       max-width: 900px;
       margin: 0 auto;
     }
-
+    @media (max-width: 768px) {
+        .fc-toolbar .fc-left,
+        .fc-toolbar .fc-right {
+          float: none;
+          display: flex;
+          justify-content: center;
+          margin-bottom:20px;
+        }
+    }
   </style>
 </head>
 <body>

@@ -63,6 +63,9 @@ header.masthead h1 {
 }
 
 /* Styles Next Event */
+.carousel-item {
+  min-height: 200px;
+}
 ol.carousel-indicators {
     bottom: -20px;
 }
@@ -81,7 +84,7 @@ ol.carousel-indicators li {
     background: #fff;
     padding: 15px;
     margin: 30px auto;
-    display: flow-root;
+    display: inline-block;
 }
 
 .next-event-title {
@@ -468,6 +471,12 @@ footer.footer {
   .masthead .logo-home {
     width: 75%;
     margin-bottom: 2rem;
+  }
+  .carousel-inner .container-next-event {
+    width: 100%;
+  }
+  .carousel-inner .container-next-event .carousel-item {
+    width: calc(100vw - 30px);
   }
   .next-event-content .next-event-logo .member-logo {
       width: 70px;

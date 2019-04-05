@@ -1,12 +1,3 @@
-- grupo: WPCompostela
-  logo: g_logo_wpcompostela.jpg
-  fecha: 2019-04-04
-  hora: "18:45"
-  titulo: "A Importancia das Imaxes no Entorno Web"
-  lugar: "O Boneco Bar. Av. Raxoi 19"
-  url_lugar: https://www.google.com/maps/search/?api=1&query=Avenida+de+Raxoi%2C+19%2C+Santiago+de+Compostela%2C+al%2C+es
-  mas_info: https://www.meetup.com/es-ES/WordPress-Compostela/events/260241274/
-
 - grupo: XantarDev
   logo: g_logo_xantardev.jpg
   fecha: 2019-04-09
@@ -15,6 +6,15 @@
   lugar: "Coworking Doutroxeito, Rúa do horreo 22."
   url_lugar: 
   mas_info: https://www.meetup.com/es-ES/XantarDev/events/260242992
+
+- grupo: Aberteo
+  logo: g_logo_aberteo.jpg
+  fecha: 2019-04-26
+  hora: "20:30"
+  titulo: "Diseño de sitios web TRECE"
+  lugar: "Banco de electrónica Os Tilos, Rua do buxo 4, Teo"
+  url_lugar: 
+  mas_info: http://www.aberteo.gal/
 
 - grupo: XantarDev
   logo: g_logo_xantardev.jpg
@@ -27,6 +27,15 @@
 
 
 # EJEMPLOS de eventos por cada grupo:
+
+# - grupo: WPCompostela
+#   logo: g_logo_wpcompostela.jpg
+#   fecha: 2019-04-04
+#   hora: "18:45"
+#   titulo: "A Importancia das Imaxes no Entorno Web"
+#   lugar: "O Boneco Bar. Av. Raxoi 19"
+#   url_lugar: https://www.google.com/maps/search/?api=1&query=Avenida+de+Raxoi%2C+19%2C+Santiago+de+Compostela%2C+al%2C+es
+#   mas_info: https://www.meetup.com/es-ES/WordPress-Compostela/events/260241274/
 
 # - grupo: XantarDev
 #   logo: g_logo_xantardev.jpg

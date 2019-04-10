@@ -63,6 +63,12 @@ header.masthead h1 {
 }
 
 /* Styles Next Event */
+.carousel-control-prev {
+  left: -75px;
+}
+.carousel-control-next {
+  right: -75px;
+}
 .carousel-item {
   min-height: 200px;
 }
@@ -468,6 +474,10 @@ footer.footer {
 
 /* smartphone */
 @media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    display: none;
+  }
   .masthead .logo-home {
     width: 75%;
     margin-bottom: 2rem;

@@ -16,7 +16,7 @@
 
     $(document).ready(function () {
 
-      $('#calendar').fullCalendar({
+      var myFullCalendar = $('#calendar').fullCalendar({
 
         header: {
           left: 'prev,next today',
@@ -48,12 +48,61 @@
         windowResize: function(view) {
           resizeCalendar();
         },
+        eventAfterAllRender:function(view) {
+          loadedCalendar();
+        }
       });
 
-
-
     });
+    function loadedCalendar() {
 
+          var arrayEvents = $('#calendar').fullCalendar('clientEvents');
+         if (arrayEvents) {
+            var arrayEventsCounter = 0;
+            
+            window.parent.$("#carouselExampleIndicators").carousel("pause").removeData();
+          window.parent.$('#carouselExampleIndicators .carousel-inner .container-next-event > .carousel-item').remove();
+            arrayEvents.forEach(function(event) {
+              var date_event = new Date(event.start);
+              
+              var year_event = date_event.getFullYear();
+              var day_event = date_event.getDate();
+              day_event = (day_event < 10 ? "0" : "") + day_event;
+              var month_event = date_event.getMonth() + 1;
+              month_event = (month_event < 10 ? "0" : "") + month_event;
+              var hour_event = date_event.getHours();
+              hour_event = (hour_event < 10 ? "0" : "") + hour_event;
+              var min_event = date_event.getMinutes();
+              min_event = (min_event < 10 ? "0" : "") + min_event;
+              var date_event_start_date_string = day_event + "/" + month_event + "/" + year_event;
+              var date_event_start_time_string = hour_event + ":" + min_event;
+              var tempHTML;
+              if (arrayEventsCounter == 0) tempHTML = '<div class="carousel-item active">';
+              else tempHTML = '<div class="carousel-item">';
+                tempHTML += '<div class="next-event-content">';
+                  tempHTML += '<div class="next-event-logo">';
+                  tempHTML += '</div>';
+                  tempHTML += '<div class="next-event-info">';
+                    tempHTML += '<a target="_blank" href="' + event.url + '">';
+                      //tempHTML += '<h6>Grupo inventao</h6>';
+                      tempHTML += '<h5>' + event.title + '</h5>';
+                      tempHTML += '<span class="datetime"><i class="fa fa-calendar-alt"></i> ' + date_event_start_date_string;
+                      if (!event.allDay) tempHTML += ' <i class="fa fa-clock"></i> ' + date_event_start_time_string;
+                      tempHTML += '</span>';
+                      tempHTML += '<span class="btn">Máis info</span>';
+                    tempHTML += '</a>';  
+                  tempHTML += '</div>';
+                tempHTML += '</div>';
+              tempHTML += '</div>';
+              window.parent.$('#carouselExampleIndicators .carousel-inner .container-next-event').append(tempHTML);
+
+              
+              //console.log(event.title);
+              arrayEventsCounter++;
+            });
+             window.parent.$("#carouselExampleIndicators").carousel();
+         }
+    }
     function resizeCalendar() {
       if ($(window).width() < 600) {
         $('#calendar').fullCalendar('changeView', 'listMonth');

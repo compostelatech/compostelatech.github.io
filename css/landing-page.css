@@ -86,7 +86,8 @@ ol.carousel-indicators li {
     height: 25px;
 }
 .container-next-event {
-    max-width: 600px;
+    max-width: 540px;
+    width: 100vw;
     background: #fff;
     padding: 15px;
     margin: 30px auto;

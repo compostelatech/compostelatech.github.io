@@ -60,8 +60,8 @@
          if (arrayEvents) {
             var arrayEventsCounter = 0;
             
-            window.parent.$("#carouselExampleIndicators").carousel("pause").removeData();
-          window.parent.$('#carouselExampleIndicators .carousel-inner .container-next-event > .carousel-item').remove();
+            
+            window.parent.$('#carouselExampleIndicators .carousel-inner .container-next-event > .carousel-item').remove();
             arrayEvents.forEach(function(event) {
               var date_event = new Date(event.start);
               
@@ -86,9 +86,12 @@
                     tempHTML += '<a target="_blank" href="' + event.url + '">';
                       //tempHTML += '<h6>Grupo inventao</h6>';
                       tempHTML += '<h5>' + event.title + '</h5>';
+                      if (event.description) tempHTML += '<span class="description"> ' + event.description +'</span><br/><br/>';
                       tempHTML += '<span class="datetime"><i class="fa fa-calendar-alt"></i> ' + date_event_start_date_string;
                       if (!event.allDay) tempHTML += ' <i class="fa fa-clock"></i> ' + date_event_start_time_string;
                       tempHTML += '</span>';
+                      tempHTML += '<br/>';
+                      if (event.location) tempHTML += '<span><i class="fa fa-map-marker-alt"></i> ' + event.location +'</span><br/>';
                       tempHTML += '<span class="btn">Máis info</span>';
                     tempHTML += '</a>';  
                   tempHTML += '</div>';
@@ -97,10 +100,12 @@
               window.parent.$('#carouselExampleIndicators .carousel-inner .container-next-event').append(tempHTML);
 
               
-              //console.log(event.title);
+              //console.log(event);
               arrayEventsCounter++;
             });
+            window.parent.$("#carouselExampleIndicators").carousel("pause").removeData();
              window.parent.$("#carouselExampleIndicators").carousel();
+
          }
     }
     function resizeCalendar() {

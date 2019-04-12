@@ -83,60 +83,17 @@
         <div class="row next-events-carousel-container">
           <div class="col-md-9 mx-auto">
               <div class="row">
-              <div id="carouselExampleIndicators" class="carousel slide mx-auto" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    {% assign index = 0 %}
-                    {% for evento in site.data.eventos %}
-                      {% if index == 0 %}
-                        {% assign classActive = 'active' %}
-                      {% else %}
-                        {% assign classActive = '' %}
-                      {% endif %}
-                      <li data-target="#carouselExampleIndicators" data-slide-to="{{ index }}" class="{{ classActive }}"></li>
 
-                      {% assign index = i | plus:1 %}
-                    {% endfor %}
+              <!-- carousel -->
+              <div style="display:block" id="loading_carouselExampleIndicators"><img src="img/white-rare-loading.gif"/></div>
+
+              <div style="display: none" id="carouselExampleIndicators" class="carousel slide mx-auto" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                   
                   </ol>
                   <div class="carousel-inner" style="max-width: 540px; margin: auto; width: 100vw;">
                     <div class="container-next-event">
-                      <div class="next-event-title"><h4><i class="fa fa-calendar-alt"></i> <span>Vindeiro evento</span></h4> </div>                          
-                      {% if site.data.eventos == false or site.data.eventos.size == 0 %}
-                      <div class="text-center" style="color:black;">
-                        <h6>Sen nada programado</h6> 
-                      </div>
-                      {% endif %}
-                      {% assign index = 0 %}
-                      {% for evento in site.data.eventos %}
-                        {% if index == 0 %}
-                          {% assign classActive = 'active' %}
-                        {% else %}
-                          {% assign classActive = '' %}
-                        {% endif %}
-                        <div class="carousel-item {{ classActive }}">
-                          <div class="next-event-content ">
-                              <div class="next-event-logo">
-                                <a href="{{ evento.mas_info }}">
-                                  <img src="img/{{ evento.logo }}" alt="{{ evento.grupo }}" class="member-logo">
-                                </a>
-                              </div>
-                              <div class="next-event-info">
-                                <a href="{{ evento.mas_info }}" target="blank">
-                                  <h6>{{ evento.grupo }}</h6> 
-                                  <h5>{{ evento.titulo }}</h5> 
-                                  <span class="datetime">
-                                    <i class="fa fa-calendar-alt"></i> {{ evento.fecha | date: "%d/%m/%Y" }}
-                                    {% if evento.hora %}<i class="fa fa-clock"></i> {{ evento.hora }} {% endif %}</span> 
-                                    <br/>{% if evento.lugar %} <i class="fa fa-map-marker-alt"></i> {{ evento.lugar }} {% endif %}</span> 
-                                  <span class="btn">Máis info</span>
-                                </a>
-                              </div>
-                            </div>
-                        </div>
-
-                        {% assign index = i | plus:1 %}
-                      {% endfor %}
-                      
-                      
+                      <div class="next-event-title"><h4><i class="fa fa-calendar-alt"></i> <span>Vindeiro evento</span></h4> </div>                      
                     </div>
                   </div>
                   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -242,6 +199,13 @@
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
+    <!--//carousel -->
+    <script type="text/javaScript">
+    /*jQuery('#carouselExampleIndicators').carousel({
+        pause: true,
+        interval: false
+    });*/
+    </script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     

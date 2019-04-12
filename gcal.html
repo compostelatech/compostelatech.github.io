@@ -97,13 +97,18 @@
                   tempHTML += '</div>';
                 tempHTML += '</div>';
               tempHTML += '</div>';
+              // adding carousel item
               window.parent.$('#carouselExampleIndicators .carousel-inner .container-next-event').append(tempHTML);
+              // adding carousel indicator
+              if (arrayEventsCounter > 0) window.parent.$('#carouselExampleIndicators ol.carousel-indicators').append('<li data-target="#carouselExampleIndicators" data-slide-to="' + arrayEventsCounter + '" class=""></li>');
+              else window.parent.$('#carouselExampleIndicators ol.carousel-indicators').append('<li data-target="#carouselExampleIndicators" data-slide-to="' + arrayEventsCounter + '" class="active"></li>');
 
-              
               //console.log(event);
               arrayEventsCounter++;
             });
-            window.parent.$("#carouselExampleIndicators").carousel("pause").removeData();
+            //window.parent.$("#carouselExampleIndicators").carousel("pause").removeData();
+            window.parent.$("#loading_carouselExampleIndicators").hide();
+            window.parent.$("#carouselExampleIndicators").show();
              window.parent.$("#carouselExampleIndicators").carousel();
 
          }

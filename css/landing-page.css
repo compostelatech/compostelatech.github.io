@@ -63,6 +63,15 @@ header.masthead h1 {
 }
 
 /* Styles Next Event */
+#loading_carouselExampleIndicators {
+  position: absolute;
+  right: 0;
+  display: block;
+  
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
 .carousel-control-prev {
   left: -75px;
 }

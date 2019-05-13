@@ -96,11 +96,13 @@ ol.carousel-indicators li {
 .next-event-title {
     display: block;
 }
-.next-event-title h4 {
+.next-event-title h4,
+.next-event-title p.next-event-title-paragraph {
     margin-bottom: 15px;
     color: #000000;
     font-size: 16px;
     text-align: left;
+    font-weight: 600;
 }
 
 .next-event-content {
@@ -130,8 +132,27 @@ ol.carousel-indicators li {
     text-decoration: none;
     color: #000;
 }
-.next-event-content .next-event-info a h6 {
+.next-event-content .next-event-info a h6,
+.next-event-content .next-event-info a p.event_group
+ {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    line-height: 1.2;
+    font-weight: 700;
     color: #666;
+    margin-bottom: .5rem;
+
+}
+.next-event-content .next-event-info a h5,
+.next-event-content .next-event-info a p.event_title
+ {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: inherit;
+    margin-bottom: .5rem;
+
 }
 .next-event-content .next-event-info a strong {
     color: #0A74BA;
@@ -140,7 +161,9 @@ ol.carousel-indicators li {
     line-height: 38px;
 }
 .next-event-content .next-event-info .btn {
+    clear: both;
     float: right;
+    margin-top: 1.5rem;
     background-color: #0D80CD;
     color:#fff;
 }

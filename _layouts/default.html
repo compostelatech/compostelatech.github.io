@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ site.locale }}">
 
   <head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="{{ site.seo_description }}">
+    <meta name="keywords" content="{{ site.seo_keywords }}">
+    <meta name="author" content="{{ site.author.name }}">
 
-    <title>{{ site.name }}</title>
+    <title>{{ site.seo_title }}</title>
 
     <!-- Social Metas -->
     <meta property="og:title" content="{{ site.name }}">
@@ -25,7 +26,7 @@
     <meta name="twitter:description" content="{{ site.description }}">
     <meta name="twitter:image" content="{{ site.icon | prepend: site.url }}">
     <meta name="twitter:url" content="{{ site.url  }}">
-    <meta name="description" content="{{ site.description }}">
+    
     
     <meta name="robots" content="{{ page.robots }}">
 
@@ -99,10 +100,10 @@
                   </ol>
                   <div class="carousel-inner" style="max-width: 600px; margin: auto;">
                     <div class="container-next-event">
-                      <div class="next-event-title"><h4><i class="fa fa-calendar-alt"></i> <span>Vindeiro evento</span></h4> </div>                          
+                      <div class="next-event-title"><p class="next-event-title-paragraph"><i class="fa fa-calendar-alt"></i> <span>Vindeiro evento</span></p> </div>                          
                       {% if site.data.eventos == false or site.data.eventos.size == 0 %}
                       <div class="text-center" style="color:black;">
-                        <h6>Sen nada programado</h6> 
+                        <p>Sen nada programado</p> 
                       </div>
                       {% endif %}
                       {% assign index = 0 %}
@@ -121,8 +122,8 @@
                               </div>
                               <div class="next-event-info">
                                 <a href="{{ evento.mas_info }}" target="blank">
-                                  <h6>{{ evento.grupo }}</h6> 
-                                  <h5>{{ evento.titulo }}</h5> 
+                                  <p class="event_group">{{ evento.grupo }}</p> 
+                                  <p class="event_title">{{ evento.titulo }}</p> 
                                   <span class="datetime">
                                     <i class="fa fa-calendar-alt"></i> {{ evento.fecha | date: "%d/%m/%Y" }}
                                     {% if evento.hora %}<i class="fa fa-clock"></i> {{ evento.hora }} {% endif %}</span> 
@@ -153,6 +154,9 @@
         </div>
       </div>
     </header>
+
+    <!-- Grupos -->    
+    {% include main.html %}
 
     <!-- Grupos -->    
     {% include grupos.html %}

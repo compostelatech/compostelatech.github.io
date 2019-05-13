@@ -55,12 +55,16 @@ name:             "CompostelaTECH"
 title:            "CompostelaTECH"
 tagline:          "Xuntos e con sentidiño"
 description:      "Agrupación de comunidades tecnolóxicas de Santiago de Compostela"
-locale:           es_es
+locale:           gl_ES
 encoding:         utf-8
 url:              https://compostelatech.org/
 baseurl:          https://compostelatech.org/
 google_analytics: XXXXXX
 icon:             /public/img/favicon-96x96.png
+
+seo_title:          "CompostelaTech - Comunidades Tecnolóxicas Santiago de Compostela"
+seo_description:    "CompostelaTech é unha agrupación de comunidades tecnolóxicas de Santiago de Compostela sobre desenrolo de software e hardware, legalidade dixital, makers, etc"
+seo_keywords:       "compostelatech, agrupación, tecnoloxía, tecnología, comunidade, comunidad, desenrolo, desarrollo, software, hardware, legal, dixital, digital, maker"
 
 plugins: 
   - jekyll-sitemap

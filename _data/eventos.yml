@@ -1,25 +1,7 @@
-- grupo: Aberteo
-  logo: g_logo_aberteo.jpg
-  fecha: 2019-04-26
-  hora: "20:30"
-  titulo: "Diseño de sitios web TRECE"
-  lugar: "Banco de electrónica Os Tilos, Rua do buxo 4, Teo"
-  url_lugar: 
-  mas_info: http://www.aberteo.gal/
-
-- grupo: CDG Santiago
-  logo: g_logo_gdgsantiago.jpg  
-  fecha: 2019-05-07
-  hora: "19:00"
-  titulo: "I/O Extended Santiago de Compostela"
-  lugar: "Santiago de Compostela"
-  url_lugar: 
-  mas_info: https://www.meetup.com/es-ES/gdgsantiagoes/events/260592177
-
 - grupo: XantarDev
   logo: g_logo_xantardev.jpg
   fecha: 2019-06-08
-  hora: 
+  hora: "09:00"
   titulo: XantarDev - Aniversario III
   lugar: "Centro Sociocultural Castiñeiriño, Santiago de Compostela"
   url_lugar: 
@@ -35,6 +17,24 @@
   mas_info: https://galicia.netcoreconf.com/
 
 # EJEMPLOS e Historico de eventos publicados por cada grupo:
+
+# - grupo: CDG Santiago
+#   logo: g_logo_gdgsantiago.jpg  
+#   fecha: 2019-05-07
+#   hora: "19:00"
+#   titulo: "I/O Extended Santiago de Compostela"
+#   lugar: "Santiago de Compostela"
+#   url_lugar: 
+#   mas_info: https://www.meetup.com/es-ES/gdgsantiagoes/events/260592177
+
+# - grupo: Aberteo
+#   logo: g_logo_aberteo.jpg
+#   fecha: 2019-04-26
+#   hora: "20:30"
+#   titulo: "Diseño de sitios web TRECE"
+#   lugar: "Banco de electrónica Os Tilos, Rua do buxo 4, Teo"
+#   url_lugar: 
+#   mas_info: http://www.aberteo.gal/
 
 # - grupo: XantarDev
 #   logo: g_logo_xantardev.jpg

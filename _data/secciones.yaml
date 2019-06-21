@@ -1,0 +1,24 @@
+- name: ¿Qué es el CompostelaTECH Open Space?
+  description: >
+    Un Open Space es una debate dirigido por los propios asistentes. <b>No hay agenda prefijada</b>: cualquier persona puede proponer temas de debate, que luego se elegirán entre todos de forma democrática.
+
+- name: ¿Dónde se desarrolla el evento?
+  description: >
+    El evento se celebrará dentro de la <a href="https://galicia.makerfaire.com/">Maker Faire Galicia</a>, en sus jornadas abiertas al público en la <b>Ciudad de la Cultura</b> el día <b>6 de julio de 2019 de 10 a 14h</b>. Nuestro evento es gratuito para los visitantes de la Maker Faire (aunque hay que abonar la entrada de la misma).  Todo el mundo es bienvenido.
+
+- name: ¿Cómo puedo participar?
+  description: >
+    Para participar, sólo tienes que presentarte. La idea principal es fomentar un debate abierto entre todos los asistentes, así que simplemente asistiendo podrás proponer temas de debate. Posteriormente, mediante una votación, entre todos decidiremos qué temas se discuten, y se realizarán una serie de charlas en círculos con los temas más votados. De nuevo, todos los asistentes podrán aportar sus ideas, conocimientos y experiencias. 
+
+- name: ¿A quién se le ha ocurrido esto?
+  description: >
+    No. No es idea nuestra. Si quieres aprender más sobre este formato, puedes visitar:<br>
+           <a href="https://proyectosagiles.org/2012/05/15/que-es-open-space/">Qué es un Open Space</a><br>
+           <a href="https://www.xlsemanal.com/estilo/20170316/trabajo-oficina-funciona-el-open-space.html">Funciona el Open Space?</a><br>
+           <a href="https://www.nosday.com/nosos/">NOS Open Space 2018</a><br><br>
+      
+- name: Sobre CompostelaTECH
+  description: >
+    Compostela Tech es una agrupación de comunidades tecnológicas de Santiago de Compostela sobre desarrollo de software y hardware, legalidad digital, makers, etc con el simple objetivo de fomentar la divulgación de la tecnología y visibilizar el trabajo de profesionales e interesados en estas temáticas.
+
+      

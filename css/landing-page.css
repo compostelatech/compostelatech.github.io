@@ -6,6 +6,10 @@
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
+
+p {
+  margin-bottom: 3rem;
+}
 a {
   color: #0D80CD;
 }
@@ -418,7 +422,7 @@ footer.footer {
 @media (min-width: 768px) {
     .masthead .logo-home{
       width: 400px;
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
     }
     header.masthead {
       padding-top: 13rem;

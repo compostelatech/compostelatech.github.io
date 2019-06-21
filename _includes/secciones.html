@@ -1,0 +1,14 @@
+    <section class="testimonials text-center bg-light">
+    {% for seccion in site.data.secciones %}
+      <div class="container">
+        <h1 class="mb-5">{{ seccion.name }}</h1>
+        <div class="row">
+        	<div class="col-lg-8 offset-lg-2 compostelatech-text">
+        		<div class="compostelatech-item mx-auto text-center">
+        			<p>{{ seccion.description }}</p>
+        		</div>
+        	</div>
+        </div>
+      </div>
+    {% endfor %}
+    </section>

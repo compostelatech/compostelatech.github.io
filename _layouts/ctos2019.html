@@ -83,7 +83,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-              <img class="logo-home" style="" src="{{ site.url }}/img/compostela-tech-open-space-logo-dark-blue-stamp.png" />
+              <img class="logo-home" alt="Compostela Tech Open Spaces 2019" style="" src="{{ site.url }}/img/open-space-2019/compostela-tech-open-space-logo-azul-blanco.png" />
           </div>
         </div>
         <!--<div class="row" style="visibility: hidden">
@@ -91,99 +91,22 @@
             <h1 class="mb-5">CompostelaTECH</h1>
           </div>
         </div>-->
-        <div class="row next-events-carousel-container">
-          <div class="col-md-9 mx-auto">
-              <div class="row">
-              <div id="carouselExampleIndicators" class="carousel slide mx-auto" data-ride="carousel">
-                  <ol class="carousel-indicators">
-                    {% assign index = 0 %}
-                    {% for evento in site.data.eventos %}
-                      {% if index == 0 %}
-                        {% assign classActive = 'active' %}
-                      {% else %}
-                        {% assign classActive = '' %}
-                      {% endif %}
-                      <li data-target="#carouselExampleIndicators" data-slide-to="{{ index }}" class="{{ classActive }}"></li>
-
-                      {% assign index = i | plus:1 %}
-                    {% endfor %}
-                  </ol>
-                  <div class="carousel-inner" style="max-width: 600px; margin: auto;">
-                    <div class="container-next-event">
-                      <div class="next-event-title"><p class="next-event-title-paragraph"><i class="fa fa-calendar-alt"></i> <span>Vindeiro evento</span></p> </div>                          
-                      {% if site.data.eventos == false or site.data.eventos.size == 0 %}
-                      <div class="text-center" style="color:black;">
-                        <p>Sen nada programado</p> 
-                      </div>
-                      {% endif %}
-                      {% assign index = 0 %}
-                      {% for evento in site.data.eventos %}
-                        {% if index == 0 %}
-                          {% assign classActive = 'active' %}
-                        {% else %}
-                          {% assign classActive = '' %}
-                        {% endif %}
-                        <div class="carousel-item {{ classActive }}">
-                          <div class="next-event-content ">
-                              <div class="next-event-logo">
-                                <a href="{{ evento.mas_info }}">
-                                  <img src="{{ site.url }}/img/{{ evento.logo }}" alt="{{ evento.grupo }}" class="member-logo">
-                                </a>
-                              </div>
-                              <div class="next-event-info">
-                                <a href="{{ evento.mas_info }}" target="blank">
-                                  <p class="event_group">{{ evento.grupo }}</p> 
-                                  <p class="event_title">{{ evento.titulo }}</p> 
-                                  <span class="datetime">
-                                    <i class="fa fa-calendar-alt"></i> {{ evento.fecha | date: "%d/%m/%Y" }}
-                                    {% if evento.hora %}<i class="fa fa-clock"></i> {{ evento.hora }} {% endif %}</span> 
-                                    <br/>{% if evento.lugar %} <i class="fa fa-map-marker-alt"></i> {{ evento.lugar }} {% endif %}</span> 
-                                  <span class="btn">Máis info</span>
-                                </a>
-                              </div>
-                            </div>
-                        </div>
-
-                        {% assign index = i | plus:1 %}
-                      {% endfor %}
-                      
-                      
-                    </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </a>
-                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </a>
-                </div>
-              </div>
-          </div>
-        </div>
+        
       </div>
     </header>
 
-    <!-- Grupos -->    
-    {% include main.html %}
-
-    <!-- Grupos -->    
-    {% include grupos.html %}
-
-    <!-- Eventos -->
-    
-    {% include calendar_events.html %}
-    
-    <!-- Documentos -->
-    {% comment %}
-    {% include documentos.html %}
-    {% endcomment %}
-    
-
-    <!-- Call to Action -->
-    {% include section_join_slack.html %}
-    
+    <section class="testimonials text-center bg-light">
+      <div class="container">
+        <h1 class="mb-5">{{ site.name }}</h1>
+        <div class="row">
+          <div class="col-lg-8 offset-lg-2 compostelatech-text">
+            <div class="compostelatech-item mx-auto text-center">
+              <p>{{ site.seo_description }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer bg-light">

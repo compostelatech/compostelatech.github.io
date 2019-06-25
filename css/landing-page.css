@@ -525,3 +525,32 @@ footer.footer {
     align-items: center;
   }
 }
+
+/* open space 2019 */
+header.masthead.openspace2019 {
+  background: url("../img/open-space-2019/ciudad-de-la-cultura-nocturna.jpg") no-repeat center center;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+}
+header.masthead.openspace2019 .overlay {
+  opacity: 0.6;
+}
+header.masthead.openspace2019 .masthead .logo-home {
+  max-width: 350px;
+}
+section.coloured_section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  background-color: #000;
+}
+section.coloured_section img {
+  max-width: 100%;
+}
+section.coloured_section.coloured_section_white {
+  background-color: #fff;
+}
+section.coloured_section.coloured_section_light_grey {
+  background-color: #f4f4f4;
+}

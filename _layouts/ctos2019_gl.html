@@ -2,7 +2,10 @@
 <html lang="es_ES">
 
   <head>
-
+   <!-- Analitycs -->
+   {% if site.google_analytics and jekyll.environment == 'production' %}
+   {% include analytics.html %}
+   {% endif %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="CompostelaTech Open Space es un evento de debate en el que los participantes deciden sobre qué temas se van a hablar">
@@ -63,15 +66,7 @@
     <meta name="theme-color" content="#ffffff">
     
     
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140034206-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-140034206-1');
-    </script>
+   
 
   </head>
 

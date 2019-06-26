@@ -2,7 +2,10 @@
 <html lang="{{ site.locale }}">
 
   <head>
-
+   <!-- Analitycs -->
+   {% if site.google_analytics and jekyll.environment == 'production' %}
+   {% include analytics.html %}
+   {% endif %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="{{ site.seo_description }}">
@@ -62,17 +65,7 @@
     <meta name="msapplication-TileImage" content="{{ site.baseurl }}/img/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     
-    
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140034206-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-140034206-1');
-    </script>
-
+        
   </head>
 
   <body>

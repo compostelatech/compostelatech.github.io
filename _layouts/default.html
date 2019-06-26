@@ -10,13 +10,13 @@
     <meta name="author" content="{{ site.author.name }}">
 
     <title>{{ site.seo_title }}</title>
-    <link rel="canonical" href="{{ site.url }}" />
+    <link rel="canonical" href="{{ site.baseurl }}" />
 
     <!-- Social Metas -->
     <meta property="og:title" content="{{ site.name }}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ site.url }}">
-    <meta property="og:image" content="{{ site.icon | prepend: site.url }}">
+    <meta property="og:url" content="{{ site.baseurl }}">
+    <meta property="og:image" content="{{ site.icon | prepend: site.baseurl }}">
     <meta property="og:description" content="{{ site.description }}">
     <meta property="og:site_name" content="{{ site.name }}">
     <meta property="og:locale" content="{{ site.locale }}">
@@ -25,41 +25,41 @@
   <meta name="twitter:creator" content="@{{ site.author.twitter }}">
     <meta name="twitter:title" content="{{ site.title }}">
     <meta name="twitter:description" content="{{ site.description }}">
-    <meta name="twitter:image" content="{{ site.icon | prepend: site.url }}">
-    <meta name="twitter:url" content="{{ site.url  }}">
+    <meta name="twitter:image" content="{{ site.icon | prepend: site.baseurl }}">
+    <meta name="twitter:url" content="{{ site.baseurl  }}">
     
     
     <meta name="robots" content="{{ page.robots }}">
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ site.url }}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="{{ site.url }}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="{{ site.url }}/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="{{ site.baseurl }}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="{{ site.url }}/css/landing-page.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/css/landing-page.css" rel="stylesheet">
 
      <!-- Icons -->
-    <link rel="shortcut icon" href="{{ site.url }}/img/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ site.url }}/img/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ site.url }}/img/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/img/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/img/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}/img/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/img/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/img/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/img/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="{{ site.url }}/img/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ site.url }}/img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/img/favicon-16x16.png">
-    <link rel="manifest" href="{{ site.url }}/img/manifest.json">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ site.baseurl }}/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ site.baseurl }}/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ site.baseurl }}/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/img/favicon-16x16.png">
+    <link rel="manifest" href="{{ site.baseurl }}/img/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="{{ site.url }}/img/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/img/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     
     
@@ -83,7 +83,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-              <img class="logo-home" style="" src="{{ site.url }}/img/logo-compostelatech-horizontal-blanconegro-negativo-transparente.png" />
+              <img class="logo-home" style="" src="{{ site.baseurl }}/img/logo-compostelatech-horizontal-blanconegro-negativo-transparente.png" />
           </div>
         </div>
         <!--<div class="row" style="visibility: hidden">
@@ -127,7 +127,7 @@
                           <div class="next-event-content ">
                               <div class="next-event-logo">
                                 <a href="{{ evento.mas_info }}">
-                                  <img src="{{ site.url }}/img/{{ evento.logo }}" alt="{{ evento.grupo }}" class="member-logo">
+                                  <img src="{{ site.baseurl }}/img/{{ evento.logo }}" alt="{{ evento.grupo }}" class="member-logo">
                                 </a>
                               </div>
                               <div class="next-event-info">
@@ -257,8 +257,8 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="{{ site.url }}/vendor/jquery/jquery.min.js"></script>
-    <script src="{{ site.url }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ site.baseurl }}/vendor/jquery/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     
   </body>

@@ -10,13 +10,13 @@
     <meta name="author" content="{{ site.author.name }}">
 
     <title>CompostelaTech Open Space 2019</title>
-    <link rel="canonical" href="{{ site.url }}" />
+    <link rel="canonical" href="{{ site.baseurl }}" />
 
     <!-- Social Metas -->
     <meta property="og:title" content="CompostelaTech Open Space 2019">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-    <meta property="og:image" content="{{ site.icon | prepend: site.url }}">
+    <meta property="og:url" content="{{ site.baseurl }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.icon | prepend: site.baseurl }}">
     <meta property="og:description" content="CompostelaTech Open Space es un evento de debate en el que los participantes deciden sobre qué temas se van a hablar">
     <meta property="og:site_name" content="{{ site.name }}">
     <meta property="og:locale" content="es_ES">
@@ -25,41 +25,41 @@
   <meta name="twitter:creator" content="@{{ site.author.twitter }}">
     <meta name="twitter:title" content="{{ site.title }}">
     <meta name="twitter:description" content="CompostelaTech Open Space es un evento de debate en el que los participantes deciden sobre qué temas se van a hablar">
-    <meta name="twitter:image" content="{{ site.icon | prepend: site.url }}">
-    <meta name="twitter:url" content="{{ site.url  }}">
+    <meta name="twitter:image" content="{{ site.icon | prepend: site.baseurl }}">
+    <meta name="twitter:url" content="{{ site.baseurl  }}">
     
     
     <meta name="robots" content="{{ page.robots }}">
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ site.url }}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
-    <link href="{{ site.url }}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="{{ site.url }}/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="{{ site.baseurl }}/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <!-- Custom styles for this template -->
-    <link href="{{ site.url }}/css/landing-page.css" rel="stylesheet">
+    <link href="{{ site.baseurl }}/css/landing-page.css" rel="stylesheet">
 
      <!-- Icons -->
-    <link rel="shortcut icon" href="{{ site.url }}/img/favicon.ico" type="image/x-icon" />
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ site.url }}/img/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ site.url }}/img/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="i{{ site.url }}/img/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/img/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}/img/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/img/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/img/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/img/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="{{ site.url }}/img/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ site.url }}/img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/img/favicon-16x16.png">
-    <link rel="manifest" href="{{ site.url }}/img/manifest.json">
+    <link rel="shortcut icon" href="{{ site.baseurl }}/img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ site.baseurl }}/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ site.baseurl }}/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="i{{ site.baseurl }}/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ site.baseurl }}/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ site.baseurl }}/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ site.baseurl }}/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ site.baseurl }}/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ site.baseurl }}/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ site.baseurl }}/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ site.baseurl }}/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/img/favicon-16x16.png">
+    <link rel="manifest" href="{{ site.baseurl }}/img/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="{{ site.url }}/img/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="{{ site.baseurl }}/img/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     
     
@@ -81,12 +81,12 @@
     <header class="masthead openspace2019 text-white text-center">
       <div class="overlay"></div>
       <div class="language_switcher">
-        <a href="{{ site.url }}/open-space-gl-2019/">GL</a> | <a href="#" class="active">ES</a>
+        <a href="{{ site.baseurl }}/open-space-gl-2019/">GL</a> | <a href="#" class="active">ES</a>
       </div>
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto">
-              <img class="logo-home" alt="Compostela Tech Open Spaces 2019" style="" src="{{ site.url }}/img/open-space-2019/compostela-tech-open-space-logo-azul-blanco.png" />
+              <img class="logo-home" alt="Compostela Tech Open Spaces 2019" style="" src="{{ site.baseurl }}/img/open-space-2019/compostela-tech-open-space-logo-azul-blanco.png" />
           </div>
           <div class="col-xl-9 mx-auto">
             <h1>Compostela Tech<br/>Open Space 2019</h1>
@@ -173,7 +173,7 @@
           <div class="row">
             <div class="col-lg-8 offset-lg-2 compostelatech-text">
               <!--<div class="col-xl-9 mx-auto">
-                  <img style="" src="{{ site.url }}/img/open-space-2019/Galicia_MF_Logo.png">
+                  <img style="" src="{{ site.baseurl }}/img/open-space-2019/Galicia_MF_Logo.png">
               </div>-->
               <div class="compostelatech-item mx-auto text-center">
                 <p>El evento se celebrará dentro de la <a href="https://galicia.makerfaire.com/">Maker Faire Galicia</a>, en sus jornadas abiertas al público en la <b>Ciudad de la Cultura</b> el día <b>6 de julio de 2019 de 10 a 14h</b>. Nuestro evento es gratuito para los visitantes de la Maker Faire (aunque hay que abonar la entrada de la misma).  Todo el mundo es bienvenido.</p>
@@ -208,7 +208,7 @@
           <div class="row">
             <div class="col-lg-8 offset-lg-2 compostelatech-text">
               <div class="compostelatech-item mx-auto text-center">
-                <p><a href="{{ site.url }}">Compostela Tech</a> es una agrupación de comunidades tecnológicas de Santiago de Compostela sobre desarrollo de software y hardware, legalidad digital, makers, etc con el simple objetivo de <b>fomentar la divulgación de la tecnología y visibilizar el trabajo de profesionales e interesados en estas temáticas</b>.</p>
+                <p><a href="{{ site.baseurl }}">Compostela Tech</a> es una agrupación de comunidades tecnológicas de Santiago de Compostela sobre desarrollo de software y hardware, legalidad digital, makers, etc con el simple objetivo de <b>fomentar la divulgación de la tecnología y visibilizar el trabajo de profesionales e interesados en estas temáticas</b>.</p>
               </div>
             </div>
           </div>
@@ -286,8 +286,8 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="{{ site.url }}/vendor/jquery/jquery.min.js"></script>
-    <script src="{{ site.url }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ site.baseurl }}/vendor/jquery/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     
   </body>

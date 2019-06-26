@@ -48,6 +48,33 @@ header.masthead h1 {
   font-size: 2rem;
 }
 
+header.masthead .language_switcher {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+header.masthead .language_switcher a {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: underline;
+}
+header.masthead .language_switcher a:hover {
+ text-decoration: none; 
+}
+@media (max-width: 767px) {
+  header.masthead .language_switcher a {
+    font-size:10px;
+    padding: 3px 5px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  header.masthead .language_switcher a:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
 .masthead .logo-home{
     width: 200px;
 }

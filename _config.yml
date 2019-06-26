@@ -58,7 +58,7 @@ description:      "Agrupación de comunidades tecnolóxicas de Santiago de Compo
 locale:           gl_ES
 encoding:         utf-8
 url:              https://compostelatech.org/
-baseurl:          https://compostelatech.org/
+baseurl:          https://compostelatech.org
 google_analytics: XXXXXX
 icon:             /public/img/favicon-96x96.png
 

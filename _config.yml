@@ -59,7 +59,7 @@ locale:           gl_ES
 encoding:         utf-8
 url:              https://compostelatech.org/
 baseurl:          https://compostelatech.org
-google_analytics: XXXXXX
+google_analytics: UA-140034206-1
 icon:             /public/img/favicon-96x96.png
 
 seo_title:          "CompostelaTech - Comunidades Tecnolóxicas Santiago de Compostela"

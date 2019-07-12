@@ -562,7 +562,7 @@ header.masthead.openspace2019 {
 header.masthead.openspace2019 .overlay {
   opacity: 0.6;
 }
-header.masthead.openspace2019 .masthead .logo-home {
+header.masthead.openspace2019 .logo-home {
   max-width: 350px;
 }
 section.coloured_section {
@@ -580,4 +580,14 @@ section.coloured_section.coloured_section_white {
 }
 section.coloured_section.coloured_section_light_grey {
   background-color: #f4f4f4;
+}
+/* open space 2019, post */
+header.masthead.openspace2019.openspace2019-post {
+  background: url("../img/open-space-2019/evento/foto-tablero.jpg") no-repeat center center;
+    padding-top: 25rem;
+    padding-bottom: 2rem;
+}
+header.masthead.openspace2019.openspace2019-post .logo-home {
+  max-width: 300px;
+  margin-bottom: 0px;
 }

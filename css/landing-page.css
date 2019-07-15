@@ -583,11 +583,38 @@ section.coloured_section.coloured_section_light_grey {
 }
 /* open space 2019, post */
 header.masthead.openspace2019.openspace2019-post {
-  background: url("../img/open-space-2019/evento/foto-tablero.jpg") no-repeat center center;
+  background: url("../img/open-space-2019/evento/foto-pizarra-gente.jpg") no-repeat center center;
     padding-top: 25rem;
     padding-bottom: 2rem;
 }
 header.masthead.openspace2019.openspace2019-post .logo-home {
   max-width: 300px;
   margin-bottom: 0px;
+}
+
+/* posts */
+
+.post-page-content h2,
+.post-page-content h3,
+.post-page-content img {
+  margin-bottom: 20px;
+}
+
+.post-page-content .featured {
+    margin: 40px 10% 40px 40px;
+    color: #0D80CD;
+    font-weight: bold;
+    font-style:italic;
+    position: relative;
+}
+.post-page-content .featured:before {
+    content: "";
+    border-left: 5px solid #0D80CD;
+    height: calc(100% + 40px);
+    display: inline-block;
+    float: none;
+    width: 5px;
+    position: absolute;
+    left: -40px;
+    top: -20px;
 }

@@ -1,22 +1,31 @@
-- grupo: Compostela Tech
-  logo: g_logo_compostelatech.jpg
-  fecha: 2019-07-06
-  hora: "10 - 14h"
-  titulo: Compostela Tech Open Space
-  lugar: "Gaiás - Cidade da Cultura"
+- grupo: CDG Santiago
+  logo: g_logo_gdgsantiago.jpg  
+  fecha: 2019-07-23
+  hora: "19:00"
+  titulo: "BirraTech"
+  lugar: "Singulario, Rúa de Fernando III O Santo, Santiago de Compostela"
   url_lugar: 
-  mas_info: https://compostelatech.org/open-space-gl-2019/
+  mas_info: https://www.meetup.com/es-ES/gdgsantiagoes/events/263150679
 
 - grupo: XantarDev
-  logo: g_logo_xantardev.jpg
+  logo: g_logo_xantardev-netcoreconf.jpg
   fecha: 2019-09-28
-  hora: 
+  hora: "08:00"
   titulo: Galicia NetCoreConf 2019
   lugar: "Centro Sociocultural Santa Marta, Santiago de Compostela"
   url_lugar: 
   mas_info: https://galicia.netcoreconf.com/
 
 # EJEMPLOS e Historico de eventos publicados por cada grupo:
+
+# - grupo: Compostela Tech
+#   logo: g_logo_compostelatech.jpg
+#   fecha: 2019-07-06
+#   hora: "10 - 14h"
+#   titulo: Compostela Tech Open Space
+#   lugar: "Gaiás - Cidade da Cultura"
+#   url_lugar: 
+#   mas_info: https://compostelatech.org/open-space-gl-2019/
 
 # - grupo: CDG Santiago
 #   logo: g_logo_gdgsantiago.jpg  

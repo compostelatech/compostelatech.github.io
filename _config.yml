@@ -11,6 +11,7 @@ footer-links:
   twitter: compostelatech
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: UCVpXr5trksduD9O4KvqE5qg #compostelatech
+  slack_invite: https://join.slack.com/t/comunidadesgalicia/shared_invite/enQtNTQzMzY5OTc0MjEyLTBlYTM5N2QwZThkMTJiZjFiNzA2MTUyMDQ4NzE5MmUxMDhkYzAyZWFmOWY4Y2RkN2Q5MTIxZmFkNTFhZThhNTM
 
 
 # Jekyll 3 now only supports Kramdown for Markdown

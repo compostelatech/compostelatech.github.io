@@ -562,7 +562,7 @@ header.masthead.openspace2019 {
 header.masthead.openspace2019 .overlay {
   opacity: 0.6;
 }
-header.masthead.openspace2019 .masthead .logo-home {
+header.masthead.openspace2019 .logo-home {
   max-width: 350px;
 }
 section.coloured_section {
@@ -580,4 +580,55 @@ section.coloured_section.coloured_section_white {
 }
 section.coloured_section.coloured_section_light_grey {
   background-color: #f4f4f4;
+}
+section.coloured_section.coloured_section_dark_grey {
+  background-color: #6c757d;
+}
+section.coloured_section.coloured_section_black {
+  background-color: #000;
+}
+section.coloured_section.coloured_section_black p,
+section.coloured_section.coloured_section_dark_grey p,
+section.coloured_section.coloured_section_black ul li,
+section.coloured_section.coloured_section_dark_grey ul li,
+section.coloured_section.coloured_section_dark_grey ol li,
+section.coloured_section.coloured_section_black ol li {
+  color: #fff;
+}
+/* open space 2019, post */
+header.masthead.openspace2019.openspace2019-post {
+  background: url("../img/open-space-2019/evento/foto-pizarra-gente.jpg") no-repeat center center;
+    padding-top: 25rem;
+    padding-bottom: 2rem;
+}
+header.masthead.openspace2019.openspace2019-post .logo-home {
+  max-width: 300px;
+  margin-bottom: 0px;
+}
+
+/* posts */
+
+.post-page-content h2,
+.post-page-content h3,
+.post-page-content img {
+  margin-bottom: 20px;
+}
+
+.post-page-content .featured {
+    margin: 40px 10% 40px 40px;
+    color: #0D80CD;
+    font-weight: bold;
+    font-style:italic;
+    position: relative;
+}
+.post-page-content .featured:before {
+    content: "";
+    border-left: 5px solid #0D80CD;
+    height: calc(100% + 40px);
+    display: inline-block;
+    float: none;
+    width: 5px;
+    position: absolute;
+    left: -40px;
+    top: -20px;
 }

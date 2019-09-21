@@ -1,21 +1,3 @@
-- grupo: Aberteo
-  logo: g_logo_aberteo.jpg
-  fecha: 2019-09-07
-  hora: "10:30"
-  titulo: Iniciación ao deseño de videoxogos
-  lugar: "Casa común de Oza"
-  url_lugar: 
-  mas_info: https://aberteo.gal/
-
-- grupo: XantarDev
-  logo: g_logo_xantardev.jpg
-  fecha: 2019-09-07
-  hora: "10:00"
-  titulo: "DataGirls - Mujeres En BigData"
-  lugar: "Centro Sociocultural Santa Marta, Santiago de Compostela"
-  url_lugar: 
-  mas_info: https://xantardev.org/datagirls/
-
 - grupo: XantarDev
   logo: g_logo_xantardev-netcoreconf.jpg
   fecha: 2019-09-28
@@ -35,6 +17,24 @@
   mas_info: https://devfest.gdggalicia.com/
 
 # EJEMPLOS e Historico de eventos publicados por cada grupo:
+
+# - grupo: Aberteo
+#   logo: g_logo_aberteo.jpg
+#   fecha: 2019-09-07
+#   hora: "10:30"
+#   titulo: Iniciación ao deseño de videoxogos
+#   lugar: "Casa común de Oza"
+#   url_lugar: 
+#   mas_info: https://aberteo.gal/
+
+# - grupo: XantarDev
+#   logo: g_logo_xantardev.jpg
+#   fecha: 2019-09-07
+#   hora: "10:00"
+#   titulo: "DataGirls - Mujeres En BigData"
+#   lugar: "Centro Sociocultural Santa Marta, Santiago de Compostela"
+#   url_lugar: 
+#   mas_info: https://xantardev.org/datagirls/
 
 # - grupo: WPCompostela
 #   logo: g_logo_wpcompostela.jpg  

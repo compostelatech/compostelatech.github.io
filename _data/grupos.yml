@@ -8,17 +8,7 @@
   youtube: 
   instagram: 
 
-- name: Blockchain Gal
-  image: g_logo_blockchaingal.jpg
-  home: http://www.blockchainhome.com
-  meetup: blockchain_gal
-  twitter: twitterblockchain
-  github: 
-  facebook:  
-  youtube: 
-  instagram: 
-
-- name: CDG Santiago
+- name: GDG Santiago
   image: g_logo_gdgsantiago.jpg
   home: 
   meetup: gdgsantiagoes
@@ -27,6 +17,16 @@
   facebook: 
   youtube: 
   instagram: gdgsantiagoes
+
+- name: Neurotech Galicia
+  image: g_logo_neurotechgal.jpg
+  home: 
+  meetup: NeuroTechGal
+  twitter: neurotechgal
+  github: 
+  facebook: 
+  youtube: 
+  instagram: neurotechgal
 
 - name: Recuncho Maker
   image: g_logo_recunchomaker.png
@@ -48,12 +48,4 @@
   youtube: 
   instagram:     
 
-- name: Wordpress Compostela
-  image: g_logo_wpcompostela.jpg
-  home: 
-  meetup: WordPress-Compostela
-  twitter: 
-  github: 
-  facebook: WPCompostela 
-  youtube: 
-  instagram:  
+  

@@ -632,3 +632,13 @@ header.masthead.openspace2019.openspace2019-post .logo-home {
     left: -40px;
     top: -20px;
 }
+span.emoji {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+}
+/* licorcaconf 2020 */
+header.masthead.licorcaconf2020 {
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+}

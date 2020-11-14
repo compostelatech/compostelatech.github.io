@@ -642,3 +642,70 @@ header.masthead.licorcaconf2020 {
     padding-top: 8rem;
     padding-bottom: 10rem;
 }
+
+
+#backstage.backstage-wrapper {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #111;
+}
+#backstage.backstage-wrapper ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#backstage .sz-speakers--wall {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: row wrap;
+}
+#backstage.backstage-wrapper * {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+#backstage .sz-speakers--wall .sz-speaker {
+  display: inline-block;
+  flex-grow: 1;
+  width: 256px;
+  padding: 8px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+#backstage .sz-speaker.sz-speaker--compact .sz-speaker__photo {
+  width: 128px;
+  height: 128px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 16px;
+  border: 4px solid rgba(17,17,17,0.1);
+  border-radius: 50%;
+  
+  
+}
+.sz-speaker__photo img {
+  border-radius: 50%;
+}
+
+#backstage.backstage-wrapper a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: none;
+  transition: all .15s ease-in;
+}
+#backstage .sz-speaker.sz-speaker--compact .sz-speaker__name {
+  margin-bottom: 0;
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: bold;
+  color: #111;
+}
+#backstage .sz-speaker.sz-speaker--compact .sz-speaker__tagline {
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: normal;
+  color: rgba(17,17,17,0.6);
+}

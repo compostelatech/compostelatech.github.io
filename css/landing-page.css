@@ -643,6 +643,9 @@ header.masthead.licorcaconf2020 {
     padding-bottom: 10rem;
 }
 
+.sz-session__title{
+  text-align: start !important;
+}
 
 #backstage.backstage-wrapper {
   font-family: sans-serif;

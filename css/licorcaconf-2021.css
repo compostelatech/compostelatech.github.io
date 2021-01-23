@@ -1,0 +1,24 @@
+
+header.masthead.licorcaconf2021 {
+    background: url("../img/licorcaconf-2020/brandy-402572_1920.jpg") no-repeat center center;
+    background: url("../img/licorcaconf-2020/dog-3289598_1920.jpg") no-repeat center center;
+    background: url("../img/licorcaconf-2020/friendship-2366955_1920.jpg") no-repeat center center;
+    background: url("../img/licorcaconf-2020/life-2048978_1920.jpg") no-repeat center center;
+    background: url("../img/licorcaconf-2021/staniel-cay-171908_1920.jpg") no-repeat center center;
+    background: url("../img/licorcaconf-2021/staniel-cay-171908_1920_v2.jpg") no-repeat center center;
+    background: url("../img/licorcaconf-2021/staniel-cay-171907_1920.jpg") no-repeat center center;
+    padding-top: 8rem;
+    padding-bottom: 10rem;
+  }
+
+  .logolicorca2021{
+    width: 200px;
+  }
+  
+  .iconGal {
+    background: url("../img/ga_ES.png") no-repeat center center;
+    height: 14px;
+    width: 20px;
+    display: inline-block;
+    /* Other styles here */
+  }

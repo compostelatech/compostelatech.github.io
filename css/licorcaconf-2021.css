@@ -22,3 +22,7 @@ header.masthead.licorcaconf2021 {
     display: inline-block;
     /* Other styles here */
   }
+
+  #backstage .sz-speakers--wall .sz-speaker {
+    width: 300px;
+  }

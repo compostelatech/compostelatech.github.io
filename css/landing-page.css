@@ -734,6 +734,12 @@ header.masthead.licorcaconf2020 {
 }
 
 /* Section Sponsor */
+.sponsorSection img{
+  max-height: 100px;
+}
+.sponsorItem {
+  margin-top: 40px;
+}
 #sponsors.sponsors-wrapper {
   font-family: sans-serif;
   font-size: 16px;
